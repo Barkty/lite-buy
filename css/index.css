@@ -1,15 +1,22 @@
 nav {
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
 }
 nav.nav2 {
   border-bottom: none;
 }
+.navbar-brand {
+  margin-top: 20px;
+}
+.nav-item.up-li {
+  padding: 0 30px;
+  border-right: 2px solid black;
+}
 i.las {
   color: black;
-  font-size: 32px;
+  font-size: 24px;
 }
 i.la-angle-down {
-  font-size: 10px;
+  font-size: 5px;
 }
 a.bg-dark {
   width: 100px;
@@ -23,20 +30,51 @@ a.bg-dark {
 .carousel-inner button {
   margin-bottom: 20px;
 }
+#top .row {
+  height: 500px;
+}
 .up-con {
   width: 100%;
+  height: 100%;
 }
 .main {
   width: 100%;
+  height: 500px;
+}
+.top-1 {
+  margin-top: 40px;
 }
 .second {
   height: 90px;
   border: 1.5px solid black;
   text-align: center;
-  margin-top: 20px;
+  font-size: 26px;
 }
-@media only screen (min-width: 970px) {
-  li.nav-item {
+.second p {
+  margin-top: 25px;
+}
+.second p span {
+  color: black;
+}
+.col-md-3 {
+  margin: 10px;
+}
+.col-md-3 a img {
+  width: 100%;
+  /* height: 300px; */
+  border: 1px solid black;
+}
+@media only screen and (min-width: 970px) {
+  li.nav-item.up-li {
     border-right: 2px solid black;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .main {
+    width: 100%;
+    height: 300px;
+  }
+  .top-1 {
+    margin-top: 135px;
   }
 }
