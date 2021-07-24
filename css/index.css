@@ -1,12 +1,39 @@
 nav {
   border-bottom: 1px solid black;
 }
+nav.nav2 {
+  border-bottom: none;
+}
 i.las {
   color: black;
   font-size: 32px;
 }
 i.la-angle-down {
   font-size: 10px;
+}
+a.bg-dark {
+  width: 100px;
+  height: 50px;
+  color: white;
+}
+.carousel-inner h3, .carousel-inner h1,
+.carousel-inner p, .carousel-inner button {
+  margin-top: 30px;
+}
+.carousel-inner button {
+  margin-bottom: 20px;
+}
+.up-con {
+  width: 100%;
+}
+.main {
+  width: 100%;
+}
+.second {
+  height: 90px;
+  border: 1.5px solid black;
+  text-align: center;
+  margin-top: 20px;
 }
 @media only screen (min-width: 970px) {
   li.nav-item {
