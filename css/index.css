@@ -1,0 +1,15 @@
+nav {
+  border-bottom: 1px solid black;
+}
+i.las {
+  color: black;
+  font-size: 32px;
+}
+i.la-angle-down {
+  font-size: 10px;
+}
+@media only screen (min-width: 970px) {
+  li.nav-item {
+    border-right: 2px solid black;
+  }
+}
