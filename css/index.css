@@ -52,17 +52,65 @@ a.bg-dark {
 }
 .second p {
   margin-top: 25px;
+  color: grey;
 }
 .second p span {
   color: black;
 }
+#show, #row3 {
+  display: none;
+}
 .col-md-3 {
   margin: 10px;
 }
+.col-md-3 a {
+  color: grey;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+}
+.col-md-3 a span {
+  color: black;
+  margin-right: 10px;
+}
 .col-md-3 a img {
   width: 100%;
-  /* height: 300px; */
   border: 1px solid black;
+}
+.popular {
+  display: inline-block;
+  margin-left: 60px;
+  width: 70%;
+  border: 2px solid black;
+  text-align: center;
+}
+.popular a {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+footer.container-fluid {
+  margin-top: 20px;
+}
+.form-con {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Product page styling*/
+.container #single {
+  margin-top: 30px;
+}
+.row.l-hr {
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+}
+#quantity {
+  background: black;
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 @media only screen and (min-width: 970px) {
   li.nav-item.up-li {
