@@ -112,6 +112,40 @@ footer.container-fluid {
   height: 30px;
   text-align: center;
 }
+.h {
+  height: 30px;
+}
+.spec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.spec div {
+  margin-left: 5px;
+  /*width: 33.3%;*/
+}
+.spec1, .spec2 {
+  border-right: 1.5px solid black;
+}
+.spec1 div, .spec2 div {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+.spec2 div {
+  margin-right: 5px;
+}
+div.size {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border: 1.5px solid black;
+}
+#wish {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+}
 @media only screen and (min-width: 970px) {
   li.nav-item.up-li {
     border-right: 2px solid black;
