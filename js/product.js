@@ -57,6 +57,17 @@ document.getElementById('wish').addEventListener('click', function(e) {
   let y = document.getElementById('wish1').value;
   var z = y + s;
   let x = document.getElementById("wish1");
-  x.innerHTML =  "<i class=\"las la-heart\"></i>" + z + " Wishlist";
+  x.innerHTML =  "<i class=\"las la-heart\"></i>" + " Wishlist" + ": " + z + " Items";
   document.getElementById('wish1').value = z;
 })
+
+/* Add to Cart algorithm*/
+document.getElementById('addCart'). addEventListener('click', function() {
+  alert("Item added to shopping cart");
+})
+//Retrieve selected products from storage
+window.localStorage.myCart;
+//Display storage items
+//Collect newly selected product information
+//Store the product information or update storage
+//Display updated storage items
