@@ -8,13 +8,20 @@ addTo.addEventListener('click', function(e){
  let y = x + cart;
  cartE.innerHTML = y;
 })
-function getItems() {
+//Retrieve selected products from storage
+var items = document.querySelector('.myItems');
+
+function getItems(){
   var storedItems = window.localStorage.myCart;
-  if (!myCart) {
-    cart.innerHTML = "<p>You do not have any items in your cart</p";
+  if(!storedItems) {
+    items.innerHTML = "You do not have any items in your shopping cart."
   } else {
-    cart.innerHTML = myCart;
+    //Display storage items
+    items.innerHTML = storedItems;
   }
 }
 getItems();
+//Collect newly selected product information
+//Store the product information or update storage
+//Display updated storage items
 })();

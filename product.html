@@ -14,7 +14,7 @@
 <body>
 	<header>
 	  <!-- first navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">LITE-BUY</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 <!--Navigation 2 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -62,7 +62,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="index.html">
             Home
           </a>
         </li>
@@ -111,9 +111,9 @@
           <li><a class="dropdown-item" href="#">American Apparel</a></li>
           <li><a class="dropdown-item" href="#">Nike</a></li>
           <li><a class="dropdown-item" href="#">Louis Vuitton</a></li>
-        <li><a class="dropdown-item" href="#">American Apparel</a></li>
-      <li><a class="dropdown-item" href="#">Billabong</a></li>
-      <li><a class="dropdown-item" href="#">Mango Sport</a></li>
+          <li><a class="dropdown-item" href="#">American Apparel</a></li>
+          <li><a class="dropdown-item" href="#">Billabong</a></li>
+          <li><a class="dropdown-item" href="#">Mango Sport</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -126,12 +126,12 @@
           <a class="nav-link" href="#">Contact Us</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" id="cartBtn" href="cart.html" value="0">
-        <i class="las la-shopping-cart"></i>
+          <a class="nav-link" id="cartBtn" href="cart.html" data-size="0">
+          <i class="las la-shopping-cart"></i>
             My Cart</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="wish1" value="0" href="#">
+          <a class="nav-link" id="wish1" data-size="0" href="#">
           <i class="las la-heart"></i>
           Wishlist
           </a>
@@ -165,7 +165,7 @@
 	          <div class="col-md-6">
 	            <a role="button">Share
 	            <!-- Share icon -->
-<i class="las la-share"></i>
+                <i class="las la-share"></i>
 	            </a>
 	          </div>
 	        </div>
@@ -181,10 +181,10 @@
 	          <div class="spec2">
 	            <p>Size:</p>
 	            <div>
-	            <div id="xtra" class="size" value="XS">XS</div>
-	            <div id="small" class="size" value="S">S</div>
-	            <div id="medium" class="size" value="M">M</div>
-	            <div id="large" class="size" value="L">L</div>
+	            <div id="xtra" class="size highlight" data-size="extra-small">XS</div>
+	            <div id="small" class="size highlight" data-size="small">S</div>
+	            <div id="medium" class="size highlight" data-size="medium">M</div>
+	            <div id="large" class="size highlight" data-size="large">L</div>
 	            </div>
 	          </div>
 	          <div class="spec3">
@@ -198,16 +198,24 @@
 	        </div>
 	        <div class="cart">
 	          <button class="btn btn-md bg-dark text-light" id="addCart" value="1">Add to Cart</button>
-	          <button class="btn bg-light" id="wish" value="1">
+	          <button class="btn bg-light" id="wish" data-size="1" value="1">
 	            <i class="las la-heart"></i>
 	          </button>
 	        </div>
 	      </div>
 	    </div>
-	    <div class="row">
+	    <div class="row desc">
 	      <div class="col-md-6">
-	        
+	        <h3>Description:</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, sapiente illo. Quasi eligendi velit deserunt asperiores dolorum soluta vero consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, sapiente illo. Quasi eligendi velit deserunt asperiores dolorum soluta vero consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, sapiente illo. Quasi eligendi velit deserunt asperiores dolorum soluta vero consequatur.</p>
 	      </div>
+        <div class="col-md-6">
+          <h3>Fabric Details:</h3>
+          <p><b>- White Cotton Jersey</b></p>
+          <p><b>- Ties at shoulder</b></p>
+          <p><b>- 100% Cotton</b></p>
+          <p><b>- Dry Cleat</b></p>
+        </div>
 	    </div>
 	  </section>
   <section id="middle" class="container">

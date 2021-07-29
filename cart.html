@@ -14,7 +14,7 @@
 <body>
 	<header>
 	  <!-- first navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">LITE-BUY</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 <!--Navigation 2 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -62,7 +62,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="index.html">
             Home
           </a>
         </li>
@@ -126,12 +126,12 @@
           <a class="nav-link" href="#">Contact Us</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" id="cartBtn" href="cart.html" value="0">
+          <a class="nav-link" id="cartBtn" href="cart.html" data-size="0">
         <i class="las la-shopping-cart"></i>
             My Cart</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="wish1" value="0" href="#">
+          <a class="nav-link" id="wish1" data-size="0" href="#">
           <i class="las la-heart"></i>
           Wishlist
           </a>
@@ -147,12 +147,14 @@
   </div>
 </nav>
 	</header>
+  <!-- End of navigation -->
 	<main>
 	  <section class="container">
+      <div class="myItems">
+
+      </div>
 	    <div id="myCart">
-	      <button type="button" class="btn btn-md bg-dark">
-	        <a href="checkout.html" class="nav-link">Checkout</a>
-	      </button>
+	      <a href="checkout.html" role="button" class="nav-link btn btn-md bg-dark">Checkout</a>
 	    </div>
 	  </section>
 	</main>
@@ -161,10 +163,10 @@
 	    <div class="col-md-3">
           <a class="navbar-brand" href="index.html">LITE-BUY</a>
           <p>Join Us On Our Social Networks</p>
-          <a href="https://www.facebook.com" class="text-dark">Facebook</a>
-         <a href="https://www.twitter.com" class="text-dark">Twitter</a>
-  <a href="https://www.instagram.com" class="text-dark">Instagram</a>
-  <a href="https://www.youtube.com" class="text-dark">YouTube</a>
+          <a href="https://www.facebook.com" class="text-dark">Facebook</a><br>
+          <a href="https://www.twitter.com" class="text-dark">Twitter</a><br>
+          <a href="https://www.instagram.com" class="text-dark">Instagram</a><br>
+          <a href="https://www.youtube.com" class="text-dark">YouTube</a><br>
 	    </div>
 	    <div class="col-md-3">
 	      <h2>Menu</h2>
@@ -186,8 +188,8 @@
 	    </div>
 	    <div class="col-md-3">
 	      <p>Subscribe to our newsletter and get the latest news, promotions and the box</p>
-   <div class="form-con">
-  <form class="d-flex">
+      <div class="form-con">
+      <form class="d-flex">
         <input class="form-control me-2" type="email" placeholder="john_doe@example.com" aria-label="Email address">
         <button class="btn btn-outline-success" type="submit">
       Subscribe
@@ -198,7 +200,7 @@
 	  </div>
 	</footer>
 	<script src="js/bootstrap.js"></script>
- <script src="js/product.js"></script>
- <script src="js/cart.js"></script>
+  <script src="js/cart.js"></script>
+ <!-- <script src="js/product.js"></script> -->
 </body>
 </html>

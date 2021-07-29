@@ -1,8 +1,8 @@
 //Get the increase button and listen to event
 document.getElementById('increase').addEventListener('click', function(e) {
   // Get the quantity element
-let increase = document.querySelector("#quantity");
-// Set counter to the initial value of the button
+  let increase = document.querySelector("#quantity");
+  // Set counter to the initial value of the button
   let counter = e.target.value;
   // Increase counter;
   counter++;
@@ -29,49 +29,47 @@ document.getElementById('decrease').addEventListener("click", function(e) {
 })
 
 document.getElementById('xtra').addEventListener('click', function(e) {
-  let tin = e.target.value;
-  alert(`${tin}`);
-  document.getElementById('xtra').style.borderColor = "crimson";
+  const xSmall = e.target.dataset.size;
+  document.getElementById('xtra').style = "border: 2px solid crimson; background-color: crimson; color: whitesmoke";
 })
 
 document.getElementById('small').addEventListener('click', function(e) {
-  const lab = e.target.value;
-  alert(lab);
-document.getElementById('small').style.borderColor = "crimson";
+  const small = e.target.dataset.size;
+  document.getElementById('small').style = "border: 2px solid crimson; background-color: crimson; color: whitesmoke";
 })
 
 document.getElementById('medium').addEventListener('click', function(e) {
-  let v = e.target.value;
-  alert(v);
-document.getElementById('medium').style.borderColor = "crimson";
+  const medium = e.target.dataset.size;
+  document.getElementById('medium').style = "border: 2px solid crimson; background-color: crimson; color: whitesmoke";
 })
 document.getElementById('large').addEventListener('click', function(e) {
-  let y = e.target.value;
-  alert(y);
-document.getElementById('large').style.borderColor = "crimson";
+  const large = e.target.dataset.size;
+  document.getElementById('large').style = "border: 2px solid crimson; background-color: crimson; color: whitesmoke";
+})
+document.getElementById('xtra').addEventListener('onmousedown', function(e){
+
+  alert("Mouse down!");
 })
 
 document.getElementById('wish').addEventListener('click', function(e) {
-  let s = e.target.value;
-  alert(s);
-  let y = document.getElementById('wish1').value;
-  var z = y + s;
+  const s = document.getElementById('wish').dataset.size;
+  let num = parseInt(s);
+  let y = document.getElementById('wish1').dataset.size;
+  let num1 = parseInt(y);
+  var z = num + num1;
   let x = document.getElementById("wish1");
-  x.innerHTML =  "<i class=\"las la-heart\"></i>" + " Wishlist" + ": " + z + " Items";
-  document.getElementById('wish1').value = z;
+  x.innerHTML =  "<i class=\"las la-heart\"></i>" + " Wishlist" + ": " + z + " Items"; //displays NaN wishlist
+  document.getElementById('wish1').dataset.size = z;
 })
 
 /* Add to Cart algorithm*/
-document.getElementById('addCart'). addEventListener('click', function(e) {
-  let newVal = document.querySelector('#cartBtn.nav-link');
+document.getElementById('addCart').addEventListener('click', function(e) {
   let val = e.target.value;
-  alert(newVal);
-  let val1 = parseInt(val + newVal);
-  alert(val);
+  let vaL = parseInt(val);
+  let newVal = document.getElementById('cartBtn').dataset.size;
+  let vaL1 = parseInt(newVal);
+  let val1 = vaL + vaL1;
+  document.getElementById('cartBtn').dataset.size = val1;
+  let val2 = document.querySelector('#cartBtn');
+  val2.innerHTML = "<i class=\"las la-shopping-cart\"></i>" + val1 + " Cart items";
 })
-//Retrieve selected products from storage
-window.localStorage.myCart;
-//Display storage items
-//Collect newly selected product information
-//Store the product information or update storage
-//Display updated storage items

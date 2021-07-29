@@ -25,7 +25,8 @@ a.bg-dark {
 }
 .carousel-inner h3, .carousel-inner h1,
 .carousel-inner p, .carousel-inner button {
-  margin-top: 30px;
+  font-size: 1.6em;
+  margin-top: 80px;
 }
 .carousel-inner button {
   margin-bottom: 20px;
@@ -44,7 +45,19 @@ a.bg-dark {
 .top-1 {
   margin-top: 40px;
 }
+.m-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+section {
+  margin-top: 30px;
+}
+section h2 {
+  padding: 20px;
+}
 .second {
+  width: 45%;
   height: 90px;
   border: 1.5px solid black;
   text-align: center;
@@ -59,9 +72,6 @@ a.bg-dark {
 }
 #show, #row3 {
   display: none;
-}
-.col-md-3 {
-  margin: 10px;
 }
 .col-md-3 a {
   color: grey;
@@ -79,8 +89,9 @@ a.bg-dark {
 }
 .popular {
   display: inline-block;
-  margin-left: 60px;
-  width: 70%;
+  margin-top: 30px;
+  margin-left: 300px;
+  width: 50%;
   border: 2px solid black;
   text-align: center;
 }
@@ -122,10 +133,18 @@ footer.container-fluid {
 }
 .spec div {
   margin-left: 5px;
-  /*width: 33.3%;*/
 }
 .spec1, .spec2 {
   border-right: 1.5px solid black;
+}
+.cart {
+  margin-top: 40px;
+}
+#wish {
+  border: 1.5px solid black;
+}
+.row.desc {
+  margin-top: 50px;
 }
 .spec1 div, .spec2 div {
   display: flex;
@@ -134,13 +153,23 @@ footer.container-fluid {
 .spec2 div {
   margin-right: 5px;
 }
-div.size {
+.size {
   width: 30px;
   height: 30px;
   display: flex;
   justify-content: center;
-  border: 1.5px solid black;
+  border: 1px solid black;
+  cursor: pointer;
 }
+/* .highlight {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border-color: crimson;
+  background-color: crimson;
+  color: whitesmoke;
+} */
 #wish {
   width: 50px;
   height: 40px;
@@ -158,5 +187,17 @@ div.size {
   }
   .top-1 {
     margin-top: 135px;
+  }
+  .m-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 430px;
+  }
+  .second {
+    width: 100%;
+    height: 90px;
+    border: 1.5px solid black;
+    text-align: center;
+    font-size: 26px;
   }
 }
