@@ -62,8 +62,12 @@ document.getElementById('wish').addEventListener('click', function(e) {
 })
 
 /* Add to Cart algorithm*/
-document.getElementById('addCart'). addEventListener('click', function() {
-  alert("Item added to shopping cart");
+document.getElementById('addCart'). addEventListener('click', function(e) {
+  let newVal = document.querySelector('#cartBtn.nav-link');
+  let val = e.target.value;
+  alert(newVal);
+  let val1 = parseInt(val + newVal);
+  alert(val);
 })
 //Retrieve selected products from storage
 window.localStorage.myCart;
